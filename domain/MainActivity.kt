@@ -59,7 +59,6 @@ class MainActivity : ComponentActivity() {
                  Button(
                          onClick = {
                              taskilista = toggleDone(task.id-1)
-
                          },
                  )
                  {
