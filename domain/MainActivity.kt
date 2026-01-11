@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
     fun Homescreen()
     {
         var taskilista by remember { mutableStateOf(mockdata) } //TEXT UI:ssa päivittyy kun taskilista muuttuu. alustetaan arvoon mockdata.
-        var toggledone by remember { mutableStateOf(false) } //koska toggledone on TEXTin sisällä, nii sekin aiheuttaa UI updaten
+        var toggledone by remember { mutableStateOf(false) }
 
             Column(modifier = Modifier.padding(16.dp)) {
                 Text(text = "tehtävälista",style = MaterialTheme.typography.headlineSmall)
